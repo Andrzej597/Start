@@ -1,0 +1,97 @@
+*{
+  color:white;
+}
+body{
+    /*это градиент, спросить за него*/
+    background-color:#1b294d;
+}
+.container{
+  /* margin-left: 20px;
+  margin-right: 20px; */
+}
+.title{
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 42px;
+}
+.button-report{
+    background: linear-gradient(to bottom, #05AB5B, #048748);
+  height:33px;
+  width:189px;
+}
+/*-----REPORTING-----*/
+.report-title{
+    margin-top: 20px;
+  color: #31C37D;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 17px;
+}
+.report-text{
+  text-align: left;
+}
+.report-img{
+  margin-top:38px;
+  margin-bottom: 55px;
+}
+#report-download-btn{
+  margin-top: 10px;
+}
+/*-----QUESTIONS-----*/
+
+/* demo контейнер */
+.questions {
+    padding: 0 20px;
+}
+/* скрываем чекбоксы и блоки с содержанием */
+.labe{
+  color: rgba(125, 219, 165, 0.74);
+  margin-bottom:15px;
+}
+.question-img{
+  /* margin-bottom:15px; */
+}
+.hide,
+.hide + label ~ div {
+    display: none;
+}
+/* вид текста label */
+.hide + label {
+  cursor: pointer;
+  display: inline-block;
+}
+.hide + label::before {
+  /*юля, я с этим доразбираюсь.
+  Там картинка не ставится, сволочь,
+  оно пока не хочет работать.
+  Но я его заставлю*/
+  display:block;
+  float: left;
+}
+
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color:#7DDBA5;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block;
+    margin-bottom: 35px;
+    /* чуточку анимации при появлении */
+     -webkit-animation:fade ease-in 0.5s;
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s;
+}
+/* анимация при появлении скрытых блоков */
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}

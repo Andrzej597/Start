@@ -1,0 +1,471 @@
+@font-face {
+    font-family: MontserratReg;
+    src: url("../font/Montserrat/Montserrat-Regular.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: MontserratMed;
+    src: url("../font/Montserrat/Montserrat-Medium.otf");
+
+}
+
+@font-face {
+    font-family: MontserratBol;
+    src: url("../font/Montserrat/Montserrat-Bold.otf");
+    font-weight: bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: MontserratReg, Arial, sans !important;
+    background: linear-gradient(#060e1f, #121c36, #060e1f);
+    color: #fff;
+}
+
+
+.title-text .btn, .report .btn, .questions .btn, .news .btn{
+    background: linear-gradient( #05AA5B, #048949) !important;
+    border: none !important;
+}
+
+.title-text .btn:hover, .report .btn:hover, .questions .btn:hover, .news .btn:hover{
+    border: none !important;
+    background: linear-gradient(#048949, #05AA5B) !important;
+}
+.nav-wid a{
+    color: #fff;
+}
+
+/*-------------Personal Area-----------------*/
+.btn-personal-area{
+    border: 1px solid #31c37d !important;
+}
+.btn-personal-area:hover{
+    background: linear-gradient(#048949, #05AA5B) !important;
+    border: 1px solid rgba(0,0,0,0) !important;
+}
+
+/*--------------------------------------------*/
+
+#buttonInModal{
+    background: linear-gradient(#048949, #05AA5B) !important;
+    border: 1px solid rgba(0,0,0,0) !important;
+
+}
+/*--------------Title Text----------------------------*/
+h1{
+    font-family: MontserratReg, Arial, sans;
+    font-size: 22px;
+    line-height: 26px;
+}
+.green b{
+    color: rgba(49,195,125,1);
+}
+
+.title-text{
+    padding-top: 50px;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.title-text h1 {
+    margin-top: 100px;
+    font-family: MontserratBol, Arial, sans;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+
+
+.graph{
+    position: absolute;
+    bottom: -5px;
+    left: -5%;
+    height: 500px !important;
+    width: 105% !important; /*работает - НЕ ЛАПАЙ И МОЛИСЬ НА ЭТО!*/
+    pointer-events: none;
+    overflow: hidden;
+}
+.ellipse-main{
+    z-index: 2;
+}
+
+
+/*---------cards----------*/
+.invest-packages{
+    margin-top: 190px;
+    padding-bottom: 30px;
+    /*z-index: 1000;*/
+}
+
+@media (max-width: 575px) {
+    .invest-packages{
+        margin-top: 30px !important;
+    }
+}
+
+.card{
+
+    min-width: 260px !important;
+// height: 190px !important;
+    margin: 15px 0;
+    background-color: inherit;
+    border-radius: 4px 4px 4px 4px;
+    transition: all .35s ease-in-out;
+}
+@media (min-width: /*768 - отключить увеличение в мобильной версии*/0px) {
+
+    .start-grow:hover {
+        z-index: 5;
+        -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        transform: scale(1.15);
+        background: rgba(58, 69, 81, 0.8);
+    }
+
+    .pro-grow:hover {
+        z-index: 5;
+        -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        transform: scale(1.15);
+        background: rgba(20, 73, 58, 0.8);
+    }
+}
+.bold-text{
+ /*   font-family: GothaProMed ;*/
+}
+
+.container-fluid{
+    padding: 0 !important;
+}
+.card .text{
+   /* padding: 5px 0;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.card-body .col-6{
+    padding: 0;
+}
+.card-header{
+    height: 45px;
+   /* padding: 0 17px 0 17px;*/
+}
+.card-body {
+
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    padding: .75rem 1.25rem !important;
+}
+
+table{
+    width: 100%;
+}
+
+.card-body td{
+    padding: 5px 0 !important;
+}
+.start{
+    background-color: rgba(255, 255, 255, 0.14);
+
+}
+.start-pack{
+    background-color: rgba(255, 255, 255, 0.07);
+
+}
+
+.pro-card{
+    background-color: #05AB5B;
+}
+
+.pro-pack{
+    background-color: rgba(33, 150, 83, 0.4);
+}
+.invest-packages  .investr{
+    /*width: 160px;*/
+    height: 33px;
+    padding: 0;
+    margin-top: 5px;
+
+}
+
+.btn-invest-pro{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+@media (min-width: 576px) {
+    #chart2-text {
+        position: absolute;
+    }
+}
+
+.info{
+    padding: 0;
+    /*width: 147px;*/
+    height: 33px;
+    /*padding: 15px 0;*/
+    padding-left: 25px;
+    padding-right: 25px;
+    border-color: #31c37d;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.invest-packages .btn{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.btn-invest-start{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-color: #31c37d !important;
+    color: #31c37d !important;
+}
+
+.btn-invest-pro{
+    border: none!important;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: linear-gradient( #05AA5B, #048949) !important;
+}
+
+.btn-invest-start:hover{
+    border: none !important;
+    color: #fff !important;
+}
+
+.info:hover{
+    border: 0;
+}
+.investr:hover, .info:hover{
+    background: linear-gradient(#048949, #05AA5B) !important;
+}
+
+/*-----------------------*/
+
+
+.modal {
+   // background-color: rgba(6, 11, 22, 0.25);
+}
+.modal-header{
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+    background-color: rgba(6, 11, 22, 1)/*#192543*/;
+    border: 0 !important;
+}
+
+.modal-body{
+    padding: 0 !important;
+    background-color: rgba(6, 11, 22, 1);
+    border-radius: 0 0 4px 4px ;
+}
+.modal-body .col-6{
+    height: 50px;
+    display: flex;
+
+}
+.info-modal{
+    color : #31C37D;
+}
+.modal-body  p{
+    margin: auto 0;
+    display: inline-block; /* центрировать..*/
+    vertical-align: middle;
+}
+.table{
+    width: 100%;
+    margin: 0;
+}
+.light{
+
+    background-color: #192543;
+}
+.dark{
+    background-color: #141e38;
+}
+.exchange{
+    width: 207px;
+    background-color: #0D172D;
+    text-align: left;
+    padding: 3%;
+    padding-left: 30px;
+    margin-right: 15px;
+    box-shadow: 0px 3px 14px rgba(7, 57, 39, 0.59);
+    border-radius: 4px 0px 0px 4px;
+
+}
+.exch-top{
+    width: 200px !important;
+    top: 180px;
+    right: 193px;
+    position: absolute;
+    z-index: 101;
+   // overflow: hidden;
+}
+
+.triangle-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;/*РАБОТАЕТ - НЕ ТРОГАТЬ */
+    overflow: hidden;
+    right: 0;
+}
+
+#aside1 {  /* селектор блока, который будет оставаться на месте */
+    position: fixed;
+    z-index: 101;
+    bottom: 0px;
+    left: 0px;
+    height: 290px;
+    width: 180px;
+    align-items: center;
+    background: url(../img/gram/ban.png) no-repeat;
+    margin-right: -100%;
+    display: block;
+    overflow: hidden;
+}
+
+#aside{
+    position: fixed;
+    z-index: 1000000001;
+    bottom: 0;
+    width: 100% !important;
+    left: 0;
+}
+
+.butt{
+
+    width: 160px !important;
+}
+.button-baner{
+    background: linear-gradient(180deg, #289FD9 0%, #0A6B9B 100%);
+}
+.elipse{
+    margin: 12% 0 20% 0;
+    width: 100px;
+}
+@media (min-width: 768px) {
+    .carousel-control-next{
+        margin-left: 9%;
+    }
+    .carousel-control-prev{
+        margin-left: -9%;
+    }
+}
+@media (max-width: 767px) {
+    .carousel-control-next{
+        margin-left: 4%;
+    }
+    .carousel-control-prev{
+        margin-left: -4%;
+    }
+}
+
+/*--------------------------------*/
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/*-------------multilanguage---------------*/
+
+.item-lang a{
+    color: #fff !important;
+}
+
+.item-lang a:hover{
+    color: #31c37d !important;
+    text-decoration: none !important;
+}
+
+.nav-item a{
+    border-bottom: 2px solid rgba(0,0,0,0);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.nav-item a:hover{
+    color: #31c37d;
+    border-bottom: 2px solid #31c37d;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.navigation-top{
+    background: linear-gradient(rgba(0,0,0,1) ,rgba(6, 14, 31, 0.9), rgba(23, 35, 65,0.8));
+}
+.navigation-top:hover{
+    background: linear-gradient(rgba(0,0,0,1), rgba(6, 14, 31, 1), rgba(23, 35, 65,1));
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.questions .row img{
+    margin-right: 15px;
+}
+#closeButton1:hover{
+
+    color: #fff !important;
+    border: 1px solid rgba(0,0,0,0);
+}
+
+input[type="text"]::-webkit-input-placeholder,input[type="password"]::-webkit-input-placeholder {
+    color: #31C37D !important;
+
+}
+textarea::placeholder{
+    color: #31C37D !important;
+}
+input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder {
+    color: #31C37D !important;
+
+}
+
+
+input[type="text"], input[type="password"]{
+    background-color:#1B2435;
+    border-radius: 4px;
+    border-color: #3B4451;
+    color:#fff;
+}
+
+textarea{
+    background-color:#1B2435 ;border-radius: 4px ; border-color: #3B4451 ;
+    color:#fff !important;
+}
+
+textarea:focus{
+    background-color: #fff !important;
+    color:#000 !important;
+}
+
+
+@media screen and (max-width: 400px) {
+    div.button-in-bottom {
+        display: none;
+    }
+}

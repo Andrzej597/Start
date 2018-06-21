@@ -39,7 +39,11 @@ class LoginForm extends ActiveRecord
     {
         return [
             // username and password are both required
+<<<<<<< HEAD
+            [['username', 'password', 'required'],
+=======
             [['username', 'password','email'], 'required'],
+>>>>>>> 225243b8395fef5a4de64cec1700302d7f607a01
             // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
             // password is validated by validatePassword()
@@ -85,7 +89,11 @@ class LoginForm extends ActiveRecord
     public function getUser()
     {
         if ($this->_user === false) {
+<<<<<<< HEAD
+            $this->_user = UserIdentity::findByUsername($this->username);
+=======
             $this->_user = User::findByUsername($this->username);
+>>>>>>> 225243b8395fef5a4de64cec1700302d7f607a01
         }
 
         return $this->_user;

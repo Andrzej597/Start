@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">Password</th>
+=======
 <?php
 
 /* @var $this yii\web\View */
@@ -14,25 +24,33 @@ $this->title = 'Smart Crypto Invest';
         <th>Name</th>
         <th>Position</th>
         <th>Office</th>
+>>>>>>> 225243b8395fef5a4de64cec1700302d7f607a01
     </tr>
     </thead>
     <tbody>
     <?php
     foreach ($users as $user ) {
         echo "<tr>";
+<<<<<<< HEAD
+        echo "<th scope='row'>".$user->userid. "</th>";
+=======
 //        echo "<th scope='row'>".$user->userid. "</th>";
+>>>>>>> 225243b8395fef5a4de64cec1700302d7f607a01
         echo "<td>".$user->username. "</td>";
         echo "<td>".$user->email. "</td>";
         echo "<td>".$user->password. "</td>";
         echo "</tr>";
     }
     ?>
+<<<<<<< HEAD
+=======
     <?php
     echo "
 
 
  
 " ?>
+>>>>>>> 225243b8395fef5a4de64cec1700302d7f607a01
 
     </tbody>
 </table>

@@ -22,7 +22,11 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
+<<<<<<< HEAD
+            'identityClass' => 'app\models\UserIdentity',
+=======
             'identityClass' => 'app\models\User',
+>>>>>>> 225243b8395fef5a4de64cec1700302d7f607a01
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
@@ -102,7 +106,11 @@ if (YII_ENV_DEV) {
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
+<<<<<<< HEAD
+        'allowedIPs' => ['127.0.0.1', '::1'],
+=======
         //'allowedIPs' => ['127.0.0.1', '::1'],
+>>>>>>> 225243b8395fef5a4de64cec1700302d7f607a01
     ];
 }
 

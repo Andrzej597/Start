@@ -105,7 +105,11 @@ class SiteController extends Controller
         }
 
         $model->password = '';
+<<<<<<< HEAD
+        return $this->render('singin', [
+=======
         return $this->render('login', [
+>>>>>>> 225243b8395fef5a4de64cec1700302d7f607a01
             'model' => $model,
         ]);
     }

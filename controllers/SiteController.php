@@ -63,7 +63,20 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $model = new InsertForm();
+        if($model->load(Yii::$app->request->post())){
+            if($model->save()){
+                Yii::$app->session->setFlash('Ok','Okay');
+                return $this->refresh();
+            }
+            else
+            {
+                Yii::$app->session->setFlash('error','nope');
+            }
+        }
+        return $this->render('index', [
+            'model' => $model,
+        ]);
     }
 
     /**
@@ -101,7 +114,7 @@ class SiteController extends Controller
                 Yii::$app->session->setFlash('error','nope');
             } 
          }
-         return $this->render('signup', [
+         return $this->render('singup', [
             'model' => $model,
         ]);
     }

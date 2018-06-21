@@ -6,6 +6,7 @@ use yii\bootstrap\Button;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
 
 AppAsset::register($this);
 
@@ -1442,6 +1443,8 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
         <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-signup modal-dialog-centered" style="transform: translate(0, -45%);top: 50%;margin: 0 auto;" role="document">
                 <div class="modal-content">
+
+
                     <?php
                     echo"<style>
                     .modal-signup{
@@ -1491,13 +1494,13 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                         <div class="text-center text-white">
                             <p class="signup-text">Smart Crypto Invest</p>
                         </div>
-                        <input class="data form-control" type="text" placeholder=<?=Yii::t('app','Username*')?>  />
-                        <input class="data form-control" type="text" placeholder="E-mail*" />
-                        <input class="data form-control" type="password" placeholder=<?=Yii::t('app','Password*')?> />
-
-                        <a id="buttonInModal" class="btn button-signup text-white" href="#" style="margin-bottom:40px; margin-top: 10px;">
-                            <?=Yii::t('app','Sign up')?>
-                        </a>
+                        <?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
+                        <?= $form->field($model, 'username')->textInput(['autofocus' => true, 'placeholder' => 'Username*'])->label(false) ?>
+                        <?= $form->field($model, 'email')->textInput(['autofocus' => true, 'placeholder' => 'E-mail*'])->label(false) ?>
+                        <?= $form->field($model, 'password')->passwordInput()->textInput(['autofocus' => true, 'placeholder' => 'Password*'])->label(false)  ?>
+                        <div class="form-group">
+                    <?= Html::submitButton('Sign up', ['class' => 'btn button-signup text-white', 'name' => 'signup-button', 'style'=>'style="margin-bottom:40px; margin-top: 10px;']) ?>
+                </div>
                         <p class="text-white">
                             <?=Yii::t('app','Already have an account?')?>
                         </p>
@@ -1505,10 +1508,18 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                         <a  id="closeButtonModal"  class="enter btn btn-outline-success" style ="border-color:#31c37d; color :#31c37d;" href="#" data-toggle="modal" data-target="#signin" data-dismiss="modal" >
                             <?=Yii::t('app','Sign in')?>
                         </a>
+                        
+                </div>
+                        <?php ActiveForm::end(); ?>
+
                     </div>
+
                 </div>
             </div>
         </div>
+
+
+
         <!--Modal SIGN IN-->
         <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
             <div class="modal-dialog modal-signin modal-signup modal-dialog-centered" role="document">

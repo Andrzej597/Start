@@ -1565,12 +1565,20 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                         <div class="text-center text-white">
                             <p class="signin-text">Smart Crypto Invest</p>
                         </div>
+<<<<<<< HEAD
                         <?php $form = ActiveForm::begin(['id' => 'form-signin']); ?>
                         <?= $form->field($model, 'username')->textInput(['autofocus' => true, 'placeholder' => 'Username*'])->label(false) ?>
                         <?= $form->field($model, 'password')->passwordInput()->textInput(['autofocus' => true, 'placeholder' => 'Password*'])->label(false)  ?>
                         <div class="form-group">
                         <?= Html::submitButton('Sign in', ['class' => 'btn button-signin text-white', 'name' => 'signin-button', 'style'=>'style="margin-bottom:40px; margin-top: 10px;']) ?>
                         </div>
+=======
+                        <input class="data form-control" type="text" placeholder="E-mail" />
+                        <input class="data form-control" type="password" placeholder=<?=Yii::t('app','Password')?> />
+
+                        <a id="buttonInModal" class="btn button-signin text-white" href="#">
+                            <?=Yii::t('app','Sign in')?>
+>>>>>>> 225243b8395fef5a4de64cec1700302d7f607a01
                         </a>
                         <a class="text-white" style="margin-bottom:40px; margin-top: 10px;"  data-toggle="modal" data-target="#recover-password" data-dismiss="modal">
                             <?=Yii::t('app','Forgot password?')?>
@@ -1582,7 +1590,11 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                             <?=Yii::t('app','Sign up')?>
                         </a>
                     </div>
+<<<<<<< HEAD
                     <?php ActiveForm::end(); ?>
+=======
+
+>>>>>>> 225243b8395fef5a4de64cec1700302d7f607a01
                 </div>
             </div>
         </div>
@@ -2377,4 +2389,11 @@ position: absolute; right: 50%; bottom: 20px; margin-bottom: 25px;">
                 </div>
             </div>
         </section>
+<<<<<<< HEAD
 </div>
+=======
+
+</div>
+
+
+>>>>>>> 225243b8395fef5a4de64cec1700302d7f607a01

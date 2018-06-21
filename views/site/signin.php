@@ -39,6 +39,7 @@ input, a{
 }</style>"
 ?>
 <!-- ЮЛЯ, ПРОСТИ ПОЖАЛУЙСТА. Я ВЫРУБАЮСЬ -->
+<<<<<<< HEAD
  <?php $form = ActiveForm::begin(['id' => 'form-signin']); ?>
                 <?= $form->field($model, 'Username')textInput(['autofocus' => true]) ?> ?>
                 <?= $form->field($model, 'password')->passwordInput() ?>
@@ -46,6 +47,9 @@ input, a{
                     <?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
                 </div>
             <?php ActiveForm::end(); ?>
+=======
+
+>>>>>>> 225243b8395fef5a4de64cec1700302d7f607a01
 <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
   <?php
     echo"<img src=\"../img/logo/logo-SCI.png\"; class=\"analis\">";
@@ -67,6 +71,7 @@ input, a{
       <?=Yii::t('app','Sign up')?>
   </a>
 </div>
+<<<<<<< HEAD
 <?php
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
@@ -85,3 +90,5 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
 </div>
+=======
+>>>>>>> 225243b8395fef5a4de64cec1700302d7f607a01

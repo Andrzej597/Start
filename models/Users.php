@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 namespace app\models;
 
@@ -47,3 +48,12 @@ class Users extends \yii\db\ActiveRecord
         ];
     }
 }
+=======
+namespace app\models; 
+use yii\db\ActiveRecord; 
+ 
+class Users extends ActiveRecord 
+{
+ 
+}
+>>>>>>> 225243b8395fef5a4de64cec1700302d7f607a01

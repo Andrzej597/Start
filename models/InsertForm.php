@@ -15,15 +15,15 @@ class InsertForm extends ActiveRecord
 	}
 
 	public function attributeLabels(){
-		/*return [
+		return [
 			'username' => 'Enter Name:',
 			'email'=>'E-mail',
 			'password'=>'Password',
-		];*/
+		];
 	}
 	 	public function rules(){
  		return[
- 		 		//[['username', 'password','email'], 'required'],
+ 		 		[['username', 'password','email'], 'required'],
  				 			];
 
  	}

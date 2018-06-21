@@ -11,6 +11,7 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\InsertForm;
 use app\models\Users;
+use app\models\MailerForm;
 
 class SiteController extends Controller
 {
@@ -73,6 +74,14 @@ class SiteController extends Controller
             {
                 Yii::$app->session->setFlash('error','nope');
             }
+        }
+        return $this->render('index', [
+            'model' => $model,
+        ]);
+        $model = new MailerForm();
+        if ($model->load(Yii::$app->request->post()) && $model->sendEmail()) {
+            Yii::$app->session->setFlash('mailerFormSubmitted');
+            return $this->refresh();
         }
         return $this->render('index', [
             'model' => $model,
@@ -161,4 +170,14 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-}
+    public function actionMailer()
+    {
+        $model = new MailerForm();
+        if ($model->load(Yii::$app->request->post()) && $model->sendEmail()) {
+            Yii::$app->session->setFlash('mailerFormSubmitted');
+            return $this->refresh();
+        }
+        return $this->render('mailer', [
+            'model' => $model,
+        ]);
+    }}
